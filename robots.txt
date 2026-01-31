@@ -1,0 +1,11 @@
+# Allow all crawlers (Google, GPTBot, etc.) to access everything
+User-agent: *
+Allow: /
+
+# Optional: explicitly allow Googlebot (redundant but clear)
+User-agent: Googlebot
+Allow: /
+
+# Optional: explicitly allow OpenAI GPTBot
+User-agent: GPTBot
+Allow: /
