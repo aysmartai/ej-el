@@ -9,3 +9,7 @@ Allow: /
 # Optional: explicitly allow OpenAI GPTBot
 User-agent: GPTBot
 Allow: /
+
+User-agent: *
+Allow: /
+Sitemap: https://superpool.aysmartai.com/sitemap.xml
