@@ -7,68 +7,124 @@
     <meta name="description" content="Lottery number filtering and historical comparison tool for informational and analytical purposes only.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://superpool.aysmartai.com/">
-    <title>Eurojackpot & Lotto 6aus49 Zahlenreduktion auf statistischer Basis</title>
+    <title>Eurojackpot &amp; Lotto 6aus49 Zahlenreduktion auf statistischer Basis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body class="bg-gray-100 text-gray-800 text-sm md:text-base flex flex-col min-h-screen">
+  <body>
 
-    <!-- FULL-WIDTH DARK HEADER -->
-    <header class="w-full bg-gray-900 text-gray-100 py-5 shadow-md">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
-          ⭐⭐ Super Lotto Pool – EuroJackpot and Lotto 6aus49 [Europe] ⭐⭐
-        </h1>
-        <p class="text-sm md:text-base text-gray-300 mt-1">
-          Generated tickets, pool intelligence, and historical comparison
-        </p>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <svg class="site-header__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="15" cy="20" r="12" style="fill:var(--ej-500)" opacity="0.92"/>
+          <circle cx="25" cy="20" r="12" style="fill:var(--el-500)" opacity="0.85"/>
+        </svg>
+        <div>
+          <h1>Super Lotto Pool — EuroJackpot &amp; Lotto 6aus49</h1>
+          <p>Generated tickets, pool intelligence, and historical comparison for Europe's two big draws</p>
+        </div>
       </div>
     </header>
 
-    <!-- 
-    <main class="max-w-5xl mx-auto px-4 py-3 w-full max-w-7xl">
-      <section id="notice" class="bg-red rounded-md shadow-md p-2 md:w-4/4 mx-auto border-l-4 border-gray-500">
-        <h2 class="text-base font-semibold mb-2">Important Notice</h2>
-        <p class="text-red-700 mb-2">
-          Dear users, please note that no Pool will be announced for next week's Friday and Saturday draws.
-        </p>
+    <main class="site-main">
+      <section class="info-card" id="disclaimer">
+        <span class="info-card__icon">ℹ️</span>
+        <div>
+          <h2>Disclaimer</h2>
+          <p>
+            This site shows a filtered selection of lottery numbers generated from predefined analytical criteria,
+            for informational purposes only. Lottery draws are random — no outcome or winning is guaranteed.
+            It is not affiliated with any official lottery operator or regulator, and nothing here is gambling,
+            financial, or investment advice. You're responsible for following the rules where you live, and we
+            encourage playing responsibly.
+          </p>
+        </div>
       </section>
-    </main>
-    DISCLAIMER -->
-    
-    <!-- DISCLAIMER -->
-    <main class="max-w-5xl mx-auto px-4 py-3 w-full max-w-7xl">
-      <section id="disclaimer" class="bg-white rounded-md shadow-md p-2 md:w-4/4 mx-auto border-l-4 border-gray-500">
-        <h2 class="text-base font-semibold mb-2">Disclaimer</h2>
-        <p class="text-gray-700 mb-2">
-          This website provides a filtered selection of lottery numbers generated using predefined analytical criteria
-          for informational purposes only. Lottery draws are based on random chance, and no outcomes or winnings are guaranteed.
-        </p>
-        <p class="text-gray-700 mb-2">
-          This website is not affiliated with any official lottery operator or regulatory authority.
-          Nothing on this website constitutes gambling, financial, or investment advice.
-        </p>
-        <p class="text-gray-700">
-          Users are responsible for compliance with applicable local laws and are encouraged to play responsibly.
-        </p>
-      </section>
-    </main>
 
-    <!-- SIDE-BY-SIDE IFRAMES  <div class="flex flex-1 gap-3 p-3 min-h-[400px]"> -->
-    
-    <div class="flex flex-col lg:flex-row justify-center gap-4 p-3 max-w-7xl mx-auto flex-1 w-full min-h-[600px]">
-      <div class="flex-1 bg-white rounded-lg shadow-md border-l-4 overflow-hidden">
-        <iframe src="./ej-analysis.html" title="EuroJackpot" class="w-full h-full border-2"></iframe>
+      <nav class="tabbar" role="tablist" aria-label="Choose a lottery">
+        <button class="tab is-active" data-game="ej" role="tab" aria-selected="true">
+          <span class="tab__dot"></span> EuroJackpot
+        </button>
+        <button class="tab" data-game="el" role="tab" aria-selected="false">
+          <span class="tab__dot"></span> Lotto 6aus49
+        </button>
+      </nav>
+
+      <div class="tab-panel" data-game="ej" id="panel-ej">
+        <div class="tab-panel-loading">Loading EuroJackpot pool…</div>
       </div>
 
-      <div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden">
-        <iframe src="./el-analysis.html" title="Lotto6aus49" class="w-full h-full border-2"></iframe>
+      <div class="tab-panel" data-game="el" id="panel-el" hidden>
+        <div class="tab-panel-loading">Loading Lotto 6aus49 pool…</div>
       </div>
-    </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-300 py-4 text-center text-base mt-auto">
-      © 2026 <span class="font-semibold text-white">https://superpool.aysmartai.com/</span> • contact@aysmartai.com •
-      <a href="#disclaimer" class="underline text-blue-400">Disclaimer</a>
+    </main>
+
+    <footer class="site-footer">
+      © 2026 <strong>https://superpool.aysmartai.com/</strong> &middot; contact@aysmartai.com &middot;
+      <a href="#disclaimer">Disclaimer</a>
     </footer>
+
+    <script>
+      (function () {
+        var sources = { ej: './ej-analysis.html', el: './el-analysis.html' };
+        var cache = {};
+
+        function loadGame(game) {
+          if (cache[game]) return Promise.resolve(cache[game]);
+          return fetch(sources[game])
+            .then(function (res) {
+              if (!res.ok) throw new Error('HTTP ' + res.status);
+              return res.text();
+            })
+            .then(function (html) {
+              var doc = new DOMParser().parseFromString(html, 'text/html');
+              var wrap = doc.querySelector('.wrap');
+              var data = {
+                className: doc.body.className, // e.g. "game-ej" — carries the accent colors
+                html: wrap ? wrap.innerHTML : doc.body.innerHTML
+              };
+              cache[game] = data;
+              return data;
+            });
+        }
+
+        function renderGame(game) {
+          var panel = document.getElementById('panel-' + game);
+          loadGame(game)
+            .then(function (data) {
+              panel.className = 'tab-panel ' + data.className;
+              panel.innerHTML = data.html;
+            })
+            .catch(function () {
+              panel.innerHTML =
+                '<div class="tab-panel-error">Couldn\'t load this section here. ' +
+                '<a href="' + sources[game] + '">Open it directly instead</a>.</div>';
+            });
+        }
+
+        renderGame('ej'); // initial active tab
+
+        document.querySelectorAll('.tab').forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            var game = tab.getAttribute('data-game');
+            var firstLoad = !cache[game];
+
+            document.querySelectorAll('.tab').forEach(function (t) {
+              var active = t === tab;
+              t.classList.toggle('is-active', active);
+              t.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+
+            document.querySelectorAll('.tab-panel').forEach(function (p) {
+              p.hidden = p.id !== 'panel-' + game;
+            });
+
+            if (firstLoad) renderGame(game);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
