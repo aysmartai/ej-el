@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Super Lotto Pool – EuroJackpot</title>
+    <title>EuroJackpot Zahlenpool & Analyse – Super Lotto Pool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lottery number filtering and historical comparison tool for informational and analytical purposes only.">
-    <link rel="canonical" href="https://superpool.aysmartai.com/">
+    <meta name="description" content="Statistisch gefilterter EuroJackpot Zahlenpool mit historischem Vergleich der letzten 10 Ziehungen, generierten Tipps und Monte-Carlo-Analyse. Nur zu Informationszwecken.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://superpool.aysmartai.com/ej-analysis.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://superpool.aysmartai.com/ej-analysis.html">
+    <meta property="og:title" content="EuroJackpot Zahlenpool & Analyse – Super Lotto Pool">
+    <meta property="og:description" content="Statistisch gefilterter EuroJackpot Zahlenpool mit historischem Vergleich, generierten Tipps und Monte-Carlo-Analyse.">
+    <meta property="og:site_name" content="Super Lotto Pool">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EuroJackpot Zahlenpool – Super Lotto Pool">
+    <meta name="twitter:description" content="Statistisch gefilterter EuroJackpot Zahlenpool mit historischem Vergleich der letzten Ziehungen.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
@@ -25,14 +36,14 @@
     </header>
 
     <div class="updated-strip">
-      <span>Pool updated <strong>20 Aug 2026</strong></span>
-      <span><span class="dot">●</span> Next draw <strong>Fri, 21 Aug 2026</strong></span>
+      <span>Pool updated <strong>24 Aug 2026</strong></span>
+      <span><span class="dot">●</span> Next draw <strong>Tue, 25 Aug 2026</strong></span>
     </div>
 
     <!-- Super Pool -->
     <section class="panel">
       <div class="panel__head">
-        <span class="panel__title">Super Pool for this draw</span>
+        <h2 class="panel__title">Super Pool for this draw</h2>
       </div>
 
       <div class="stat-row">
@@ -45,11 +56,11 @@
           <div class="label">Euro numbers</div>
         </div>
         <div class="stat-tile">
-          <div class="value">8</div>
+          <div class="value">7</div>
           <div class="label">Hot</div>
         </div>
         <div class="stat-tile">
-          <div class="value">14</div>
+          <div class="value">13</div>
           <div class="label">Overdue</div>
         </div>
       </div>
@@ -63,6 +74,8 @@
             <span class="ball">6</span>
           
             <span class="ball">8</span>
+          
+            <span class="ball">13</span>
           
             <span class="ball">16</span>
           
@@ -86,11 +99,9 @@
           
             <span class="ball">35</span>
           
-            <span class="ball">36</span>
-          
             <span class="ball">37</span>
           
-            <span class="ball">39</span>
+            <span class="ball">38</span>
           
             <span class="ball">40</span>
           
@@ -113,9 +124,9 @@
           
             <span class="ball ball--euro">7</span>
           
-            <span class="ball ball--euro">2</span>
-          
             <span class="ball ball--euro">6</span>
+          
+            <span class="ball ball--euro">2</span>
           
             <span class="ball ball--euro">1</span>
           
@@ -137,13 +148,11 @@
             
               <span class="ball ball--sm ball--hot">17</span>
             
-              <span class="ball ball--sm ball--hot">18</span>
-            
               <span class="ball ball--sm ball--hot">23</span>
             
-              <span class="ball ball--sm ball--hot">37</span>
+              <span class="ball ball--sm ball--hot">35</span>
             
-              <span class="ball ball--sm ball--hot">39</span>
+              <span class="ball ball--sm ball--hot">37</span>
             
               <span class="ball ball--sm ball--hot">44</span>
             
@@ -181,8 +190,6 @@
             
               <span class="ball ball--sm ball--overdue">49</span>
             
-              <span class="ball ball--sm ball--overdue">50</span>
-            
           </div>
         </div>
       </div>
@@ -198,7 +205,7 @@
     <!-- Performance insight -->
     <section class="panel panel--accent">
       <div class="panel__head">
-        <span class="panel__title">Engine vs. Random</span>
+        <h2 class="panel__title">Engine vs. Random</span>
       </div>
       <p class="panel__sub">How the Super Pool's filtering compares to picking numbers completely at random, across 500 simulated draws. This is a statistical comparison only — not a forecast of future results.</p>
 
@@ -206,13 +213,13 @@
         <div class="perf-block__label"><span>Avg. main-pool matches per ticket</span></div>
         <div class="perf-bar-row">
           <span class="perf-bar-row__tag">Engine</span>
-          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--engine" style="width:79.3%"></span></span>
-          <span class="perf-bar-row__val">0.493</span>
+          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--engine" style="width:80.0%"></span></span>
+          <span class="perf-bar-row__val">0.507</span>
         </div>
         <div class="perf-bar-row">
           <span class="perf-bar-row__tag">Random</span>
-          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--random" style="width:80.0%"></span></span>
-          <span class="perf-bar-row__val">0.497</span>
+          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--random" style="width:79.4%"></span></span>
+          <span class="perf-bar-row__val">0.503</span>
         </div>
       </div>
 
@@ -220,13 +227,13 @@
         <div class="perf-block__label"><span>Avg. euro-pool matches per ticket</span></div>
         <div class="perf-bar-row">
           <span class="perf-bar-row__tag">Engine</span>
-          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--engine" style="width:79.6%"></span></span>
-          <span class="perf-bar-row__val">0.333</span>
+          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--engine" style="width:80.0%"></span></span>
+          <span class="perf-bar-row__val">0.338</span>
         </div>
         <div class="perf-bar-row">
           <span class="perf-bar-row__tag">Random</span>
-          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--random" style="width:80.0%"></span></span>
-          <span class="perf-bar-row__val">0.334</span>
+          <span class="perf-bar-track"><span class="perf-bar-fill perf-bar-fill--random" style="width:78.0%"></span></span>
+          <span class="perf-bar-row__val">0.33</span>
         </div>
       </div>
 
@@ -236,7 +243,7 @@
     <!-- Historical comparison -->
     <section class="panel">
       <div class="panel__head">
-        <span class="panel__title">Historical Comparison — Last 10 Draws</span>
+        <h2 class="panel__title">Historical Comparison — Last 10 Draws</span>
       </div>
       <p class="panel__sub">
         An informational, after-the-fact comparison between Super Pool selections and official draw results.
@@ -263,6 +270,64 @@
         
         
         <details class="draw" open>
+          <summary class="draw__head">
+            <span class="draw__date">Fri, 21 Aug 2026</span>
+            <span class="draw__spacer"></span>
+            <span class="match-badge match-badge--mid">2 matched</span>
+            <span class="draw__chevron">▾</span>
+          </summary>
+          <div class="draw__body">
+            <div>
+              <div class="draw__col-label">Official Draw</div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Main</div>
+                <div class="ball-row">
+                  <span class="ball ball--sm">25</span><span class="ball ball--sm">35</span><span class="ball ball--sm">45</span><span class="ball ball--sm">46</span><span class="ball ball--sm">50</span>
+                </div>
+              </div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Euro</div>
+                <div class="ball-row">
+                  <span class="ball ball--sm ball--euro">4</span><span class="ball ball--sm ball--euro">8</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="draw__col-label">Generated Pool</div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Main pool</div>
+                <div class="ball-row">
+                  <span class="ball ball--sm ball--ghost">4</span><span class="ball ball--sm ball--ghost">6</span><span class="ball ball--sm ball--ghost">8</span><span class="ball ball--sm ball--ghost">16</span><span class="ball ball--sm ball--ghost">17</span><span class="ball ball--sm ball--ghost">18</span><span class="ball ball--sm ball--ghost">19</span><span class="ball ball--sm ball--ghost">20</span><span class="ball ball--sm ball--ghost">21</span><span class="ball ball--sm ball--ghost">23</span><span class="ball ball--sm ball--ghost">25</span><span class="ball ball--sm ball--ghost">27</span><span class="ball ball--sm ball--ghost">28</span><span class="ball ball--sm ball--ghost">35</span><span class="ball ball--sm ball--ghost">36</span><span class="ball ball--sm ball--ghost">37</span><span class="ball ball--sm ball--ghost">39</span><span class="ball ball--sm ball--ghost">40</span><span class="ball ball--sm ball--ghost">41</span><span class="ball ball--sm ball--ghost">42</span><span class="ball ball--sm ball--ghost">44</span><span class="ball ball--sm ball--ghost">47</span>
+                </div>
+              </div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Euro pool</div>
+                <div class="ball-row">
+                  <span class="ball ball--sm ball--ghost">5</span><span class="ball ball--sm ball--ghost">7</span><span class="ball ball--sm ball--ghost">2</span><span class="ball ball--sm ball--ghost">6</span><span class="ball ball--sm ball--ghost">1</span><span class="ball ball--sm ball--ghost">11</span><span class="ball ball--sm ball--ghost">12</span><span class="ball ball--sm ball--ghost">3</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="draw__col-label">Matched</div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Main</div>
+                <div class="ball-row">
+                  <span class="ball ball--sm ball--matched">25</span><span class="ball ball--sm ball--matched">35</span>
+                </div>
+              </div>
+              <div class="draw__row">
+                <div class="draw__row-tag">Euro</div>
+                <div class="ball-row">
+                  <span class="empty-note">None</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        
+        
+        
+        <details class="draw">
           <summary class="draw__head">
             <span class="draw__date">Tue, 18 Aug 2026 <span class="draw__star">★</span></span>
             <span class="draw__spacer"></span>
@@ -782,71 +847,13 @@
           </div>
         </details>
         
-        
-        
-        <details class="draw">
-          <summary class="draw__head">
-            <span class="draw__date">Fri, 17 Jul 2026</span>
-            <span class="draw__spacer"></span>
-            <span class="match-badge match-badge--mid">2 matched</span>
-            <span class="draw__chevron">▾</span>
-          </summary>
-          <div class="draw__body">
-            <div>
-              <div class="draw__col-label">Official Draw</div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Main</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm">6</span><span class="ball ball--sm">21</span><span class="ball ball--sm">31</span><span class="ball ball--sm">47</span><span class="ball ball--sm">48</span>
-                </div>
-              </div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Euro</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm ball--euro">2</span><span class="ball ball--sm ball--euro">9</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="draw__col-label">Generated Pool</div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Main pool</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm ball--ghost">1</span><span class="ball ball--sm ball--ghost">8</span><span class="ball ball--sm ball--ghost">11</span><span class="ball ball--sm ball--ghost">15</span><span class="ball ball--sm ball--ghost">16</span><span class="ball ball--sm ball--ghost">17</span><span class="ball ball--sm ball--ghost">18</span><span class="ball ball--sm ball--ghost">21</span><span class="ball ball--sm ball--ghost">23</span><span class="ball ball--sm ball--ghost">25</span><span class="ball ball--sm ball--ghost">26</span><span class="ball ball--sm ball--ghost">27</span><span class="ball ball--sm ball--ghost">28</span><span class="ball ball--sm ball--ghost">29</span><span class="ball ball--sm ball--ghost">30</span><span class="ball ball--sm ball--ghost">33</span><span class="ball ball--sm ball--ghost">35</span><span class="ball ball--sm ball--ghost">36</span><span class="ball ball--sm ball--ghost">37</span><span class="ball ball--sm ball--ghost">39</span><span class="ball ball--sm ball--ghost">41</span><span class="ball ball--sm ball--ghost">42</span>
-                </div>
-              </div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Euro pool</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm ball--ghost">7</span><span class="ball ball--sm ball--ghost">6</span><span class="ball ball--sm ball--ghost">5</span><span class="ball ball--sm ball--ghost">2</span><span class="ball ball--sm ball--ghost">12</span><span class="ball ball--sm ball--ghost">1</span><span class="ball ball--sm ball--ghost">10</span><span class="ball ball--sm ball--ghost">8</span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="draw__col-label">Matched</div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Main</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm ball--matched">21</span>
-                </div>
-              </div>
-              <div class="draw__row">
-                <div class="draw__row-tag">Euro</div>
-                <div class="ball-row">
-                  <span class="ball ball--sm ball--matched">2</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </details>
-        
       </div>
     </section>
 
     <!-- Tickets -->
     <section class="panel">
       <div class="panel__head">
-        <span class="panel__title">Tickets Generated From the Super Pool</span>
+        <h2 class="panel__title">Tickets Generated From the Super Pool</span>
         <span class="eyebrow">15 tickets</span>
       </div>
       <div class="ticket-grid">
@@ -856,12 +863,12 @@
             <div class="ticket__label">Quick pick 1</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">2</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">27</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">42</span>
+              <span class="ball ball--sm ball--paper">18</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">37</span><span class="ball ball--sm ball--paper">43</span><span class="ball ball--sm ball--paper">47</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">4</span><span class="ball ball--sm ball--paper ball--euro">6</span>
+              <span class="ball ball--sm ball--paper ball--euro">6</span><span class="ball ball--sm ball--paper ball--euro">9</span>
             </div>
           </div>
         
@@ -870,12 +877,12 @@
             <div class="ticket__label">Quick pick 2</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">11</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">40</span>
+              <span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">22</span><span class="ball ball--sm ball--paper">25</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">37</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">3</span><span class="ball ball--sm ball--paper ball--euro">8</span>
+              <span class="ball ball--sm ball--paper ball--euro">5</span><span class="ball ball--sm ball--paper ball--euro">8</span>
             </div>
           </div>
         
@@ -884,12 +891,12 @@
             <div class="ticket__label">Quick pick 3</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">16</span><span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">26</span><span class="ball ball--sm ball--paper">47</span>
+              <span class="ball ball--sm ball--paper">22</span><span class="ball ball--sm ball--paper">25</span><span class="ball ball--sm ball--paper">37</span><span class="ball ball--sm ball--paper">40</span><span class="ball ball--sm ball--paper">44</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">7</span><span class="ball ball--sm ball--paper ball--euro">8</span>
+              <span class="ball ball--sm ball--paper ball--euro">7</span><span class="ball ball--sm ball--paper ball--euro">9</span>
             </div>
           </div>
         
@@ -898,12 +905,12 @@
             <div class="ticket__label">Quick pick 4</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">45</span><span class="ball ball--sm ball--paper">47</span>
+              <span class="ball ball--sm ball--paper">13</span><span class="ball ball--sm ball--paper">15</span><span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">44</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">2</span><span class="ball ball--sm ball--paper ball--euro">9</span>
+              <span class="ball ball--sm ball--paper ball--euro">7</span><span class="ball ball--sm ball--paper ball--euro">10</span>
             </div>
           </div>
         
@@ -912,12 +919,12 @@
             <div class="ticket__label">Quick pick 5</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">40</span><span class="ball ball--sm ball--paper">41</span><span class="ball ball--sm ball--paper">43</span><span class="ball ball--sm ball--paper">44</span>
+              <span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">34</span><span class="ball ball--sm ball--paper">38</span><span class="ball ball--sm ball--paper">42</span><span class="ball ball--sm ball--paper">47</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">4</span><span class="ball ball--sm ball--paper ball--euro">7</span>
+              <span class="ball ball--sm ball--paper ball--euro">10</span><span class="ball ball--sm ball--paper ball--euro">11</span>
             </div>
           </div>
         
@@ -926,7 +933,77 @@
             <div class="ticket__label">Quick pick 6</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">16</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">34</span><span class="ball ball--sm ball--paper">41</span>
+              <span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">33</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">47</span>
+            </div>
+            <div class="ticket__divider"></div>
+            <div class="ticket__row-tag">Euro</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper ball--euro">3</span><span class="ball ball--sm ball--paper ball--euro">10</span>
+            </div>
+          </div>
+        
+          <div class="ticket">
+            <span class="ticket__num">07</span>
+            <div class="ticket__label">Quick pick 7</div>
+            <div class="ticket__row-tag">Main</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper">12</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">27</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">41</span>
+            </div>
+            <div class="ticket__divider"></div>
+            <div class="ticket__row-tag">Euro</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper ball--euro">3</span><span class="ball ball--sm ball--paper ball--euro">10</span>
+            </div>
+          </div>
+        
+          <div class="ticket">
+            <span class="ticket__num">08</span>
+            <div class="ticket__label">Quick pick 8</div>
+            <div class="ticket__row-tag">Main</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper">13</span><span class="ball ball--sm ball--paper">16</span><span class="ball ball--sm ball--paper">37</span><span class="ball ball--sm ball--paper">44</span><span class="ball ball--sm ball--paper">50</span>
+            </div>
+            <div class="ticket__divider"></div>
+            <div class="ticket__row-tag">Euro</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper ball--euro">2</span><span class="ball ball--sm ball--paper ball--euro">10</span>
+            </div>
+          </div>
+        
+          <div class="ticket">
+            <span class="ticket__num">09</span>
+            <div class="ticket__label">Quick pick 9</div>
+            <div class="ticket__row-tag">Main</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">26</span><span class="ball ball--sm ball--paper">27</span><span class="ball ball--sm ball--paper">42</span>
+            </div>
+            <div class="ticket__divider"></div>
+            <div class="ticket__row-tag">Euro</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper ball--euro">9</span><span class="ball ball--sm ball--paper ball--euro">11</span>
+            </div>
+          </div>
+        
+          <div class="ticket">
+            <span class="ticket__num">10</span>
+            <div class="ticket__label">Quick pick 10</div>
+            <div class="ticket__row-tag">Main</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper">6</span><span class="ball ball--sm ball--paper">12</span><span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">38</span><span class="ball ball--sm ball--paper">40</span>
+            </div>
+            <div class="ticket__divider"></div>
+            <div class="ticket__row-tag">Euro</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper ball--euro">4</span><span class="ball ball--sm ball--paper ball--euro">5</span>
+            </div>
+          </div>
+        
+          <div class="ticket">
+            <span class="ticket__num">11</span>
+            <div class="ticket__label">Quick pick 11</div>
+            <div class="ticket__row-tag">Main</div>
+            <div class="ball-row">
+              <span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">8</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">46</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
@@ -936,86 +1013,16 @@
           </div>
         
           <div class="ticket">
-            <span class="ticket__num">07</span>
-            <div class="ticket__label">Quick pick 7</div>
-            <div class="ticket__row-tag">Main</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">18</span><span class="ball ball--sm ball--paper">25</span><span class="ball ball--sm ball--paper">27</span><span class="ball ball--sm ball--paper">43</span>
-            </div>
-            <div class="ticket__divider"></div>
-            <div class="ticket__row-tag">Euro</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">7</span><span class="ball ball--sm ball--paper ball--euro">10</span>
-            </div>
-          </div>
-        
-          <div class="ticket">
-            <span class="ticket__num">08</span>
-            <div class="ticket__label">Quick pick 8</div>
-            <div class="ticket__row-tag">Main</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper">8</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">39</span><span class="ball ball--sm ball--paper">41</span><span class="ball ball--sm ball--paper">50</span>
-            </div>
-            <div class="ticket__divider"></div>
-            <div class="ticket__row-tag">Euro</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">8</span><span class="ball ball--sm ball--paper ball--euro">11</span>
-            </div>
-          </div>
-        
-          <div class="ticket">
-            <span class="ticket__num">09</span>
-            <div class="ticket__label">Quick pick 9</div>
-            <div class="ticket__row-tag">Main</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper">6</span><span class="ball ball--sm ball--paper">18</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">45</span>
-            </div>
-            <div class="ticket__divider"></div>
-            <div class="ticket__row-tag">Euro</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">7</span><span class="ball ball--sm ball--paper ball--euro">10</span>
-            </div>
-          </div>
-        
-          <div class="ticket">
-            <span class="ticket__num">10</span>
-            <div class="ticket__label">Quick pick 10</div>
-            <div class="ticket__row-tag">Main</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper">18</span><span class="ball ball--sm ball--paper">40</span><span class="ball ball--sm ball--paper">44</span><span class="ball ball--sm ball--paper">46</span><span class="ball ball--sm ball--paper">47</span>
-            </div>
-            <div class="ticket__divider"></div>
-            <div class="ticket__row-tag">Euro</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">2</span><span class="ball ball--sm ball--paper ball--euro">8</span>
-            </div>
-          </div>
-        
-          <div class="ticket">
-            <span class="ticket__num">11</span>
-            <div class="ticket__label">Quick pick 11</div>
-            <div class="ticket__row-tag">Main</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">42</span><span class="ball ball--sm ball--paper">44</span><span class="ball ball--sm ball--paper">47</span><span class="ball ball--sm ball--paper">48</span>
-            </div>
-            <div class="ticket__divider"></div>
-            <div class="ticket__row-tag">Euro</div>
-            <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">2</span><span class="ball ball--sm ball--paper ball--euro">9</span>
-            </div>
-          </div>
-        
-          <div class="ticket">
             <span class="ticket__num">12</span>
             <div class="ticket__label">Quick pick 12</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">3</span><span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">8</span><span class="ball ball--sm ball--paper">20</span><span class="ball ball--sm ball--paper">23</span>
+              <span class="ball ball--sm ball--paper">15</span><span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">40</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">3</span><span class="ball ball--sm ball--paper ball--euro">9</span>
+              <span class="ball ball--sm ball--paper ball--euro">3</span><span class="ball ball--sm ball--paper ball--euro">8</span>
             </div>
           </div>
         
@@ -1024,12 +1031,12 @@
             <div class="ticket__label">Quick pick 13</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">36</span><span class="ball ball--sm ball--paper">37</span><span class="ball ball--sm ball--paper">47</span><span class="ball ball--sm ball--paper">49</span>
+              <span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">13</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">25</span><span class="ball ball--sm ball--paper">29</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">4</span><span class="ball ball--sm ball--paper ball--euro">7</span>
+              <span class="ball ball--sm ball--paper ball--euro">1</span><span class="ball ball--sm ball--paper ball--euro">10</span>
             </div>
           </div>
         
@@ -1038,7 +1045,7 @@
             <div class="ticket__label">Quick pick 14</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">14</span><span class="ball ball--sm ball--paper">20</span><span class="ball ball--sm ball--paper">23</span><span class="ball ball--sm ball--paper">36</span><span class="ball ball--sm ball--paper">40</span>
+              <span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">21</span><span class="ball ball--sm ball--paper">28</span><span class="ball ball--sm ball--paper">41</span><span class="ball ball--sm ball--paper">46</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
@@ -1052,12 +1059,12 @@
             <div class="ticket__label">Quick pick 15</div>
             <div class="ticket__row-tag">Main</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper">6</span><span class="ball ball--sm ball--paper">12</span><span class="ball ball--sm ball--paper">16</span><span class="ball ball--sm ball--paper">18</span><span class="ball ball--sm ball--paper">21</span>
+              <span class="ball ball--sm ball--paper">4</span><span class="ball ball--sm ball--paper">17</span><span class="ball ball--sm ball--paper">19</span><span class="ball ball--sm ball--paper">35</span><span class="ball ball--sm ball--paper">46</span>
             </div>
             <div class="ticket__divider"></div>
             <div class="ticket__row-tag">Euro</div>
             <div class="ball-row">
-              <span class="ball ball--sm ball--paper ball--euro">1</span><span class="ball ball--sm ball--paper ball--euro">10</span>
+              <span class="ball ball--sm ball--paper ball--euro">4</span><span class="ball ball--sm ball--paper ball--euro">6</span>
             </div>
           </div>
         
